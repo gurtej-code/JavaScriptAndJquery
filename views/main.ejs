@@ -1,0 +1,278 @@
+<h3>Java Script Examples</h3>
+<div class="first">
+    <div>
+        <p class="p1">Using Click to Change Its Data</p>
+        <input type="button" value="Click Here" onclick="document.getElementsByClassName('p1')[0].innerHTML='hello world'"></input>
+    </div>
+    <div>
+        <p>Using alert Function</p>
+        <input type="button" value="Click Here" onclick="alertjs()"></input>
+    </div>
+    <div>
+        <p>Using Window.Print To Print Page </p>
+        <input type="button" value="Click Here" onclick="window.print()"></input>
+    </div>
+
+    <div>
+        <p class="p1">Using Variables and Functions In This Example </p>
+        <input type="button" value="Click Here" onclick="variable()"></input>
+    </div>
+
+    <div>
+        <p class="p1"> Returning Value From Function </p>
+        <input type="button" value="Click Here" onclick="document.getElementsByClassName('p1')[2].innerHTML=toCelsius(97)"></input>
+    </div>
+
+    <div>
+        <p class="p1"> Object Decleration , Definition and Accessing  </p>
+        <input type="button" value="Click Here" onclick="Objectexp()"></input>
+    </div>
+</div>
+<h3>String Function Example in JavaScript</h3>
+<div class="first">
+    <div>
+        <p>The indexOf() method returns the position of the first occurrence of a specified text </p>
+        <p class="p2"></p>
+        <input type="button" value="Click Here" onclick="indexofexmp()"></input>
+    </div>
+
+    <div>
+        <p>The lastIndexOf() method returns the position of the last occurrence of a specified text </p>
+        <p class="p2"></p>
+        <input type="button" value="Click Here" onclick="indexlastofexmp()"></input>
+    </div>
+
+    <div>
+        <p>The search() method returns the position of the first occurrence of a specified text in a string </p>
+        <p class="p2"></p>
+        <input type="button" value="Click Here" onclick="searchexp()"></input>
+    </div>
+
+    <div>
+        <p>The slice() method extract a part of a string and returns the extracted parts in a new string </p>
+        <p class="p2"></p>
+        <input type="button" value="Click Here" onclick="sliceexp()"></input>
+    </div>
+
+    <div>
+        <p>The substr() method extract a part of a string and returns the extracted parts in a new string </p>
+        <p class="p2"></p>
+        <input type="button" value="Click Here" onclick="substrexp()"></input>
+    </div>
+
+    <div>
+        <p>Replace "Microsoft" with "MyGithub" in the paragraph below </p>
+        <p class="p2">Please visit Microsoft!</p>
+        <input type="button" value="Click Here" onclick="repexp()"></input>
+    </div>
+</div>
+<h3>JavaScript Arrays</h3>
+<div class="first">
+    <div>
+        <p>Decleration , Definition and Accessing </p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="showdata()"></input>
+    </div>
+
+    <div>
+        <p>Inserting  Data Into Array Using Push() Function</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="pushexp()"></input>
+    </div>
+
+    <div>
+        <p>Iterating All The From Array Using Loop</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="iterate()"></input>
+    </div>
+
+    <div>
+        <p>The splice() method adds new elements to an array</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="spliceexp()"></input>
+    </div>
+
+    <div>
+        <p>The concat() method is used to merge (concatenate) arrays</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="concatexp()"></input>
+    </div>
+
+    <div>
+        <p>The pop() method removes the last element from an array</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="popexp()"></input>
+    </div>
+
+    <div>
+        <p>The sort() method sorts an array alphabetically</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="sortexp()"></input>
+    </div>
+
+    <div>
+        <p>The reverse() method reverses the elements in an array
+           By combining sort() and reverse() you can sort an array in descending order
+        </p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="revexp()"></input>
+    </div>
+
+    <div>
+        <p>Sorting An Array According To Numeric Value</p>
+        <p class="p3"></p>
+        <input type="button" value="Click Here" onclick="numericsortexp()"></input>
+    </div>
+
+</div>
+
+<h3>JavaScript Date Objects</h3>
+<div class="first">
+    <div>
+        <p>Using new Date(), creates a new date object with the current date and time</p>
+        <p class="p4"></p>
+        <input type="button" value="Click Here" onclick="dateexp()"></input>
+    </div>
+
+    <div>
+        <p>The Get method is used to fetch all data related to date like year , month , time etc.</p>
+        <p class="p4"></p>
+        <input type="button" value="Click Here" onclick="getdate()"></input>
+    </div>
+
+    <div>
+        <p>The Set method is used to set all data related to date like year , month , time etc.</p>
+        <p class="p4"></p>
+        <input type="button" value="Click Here" onclick="setdate()"></input>
+    </div>
+
+</div>
+
+<script>
+    function setdate(){
+        var d=new Date()
+        d.setFullYear(2020, 11, 3)
+        document.getElementsByClassName('p4')[2].innerHTML=d
+    }
+    function getdate(){
+        var d=new Date()
+        document.getElementsByClassName('p4')[1].innerHTML=d.getTime()
+    }
+
+    function dateexp(){
+        var d=new Date();
+        document.getElementsByClassName('p4')[0].innerHTML=d
+    }
+
+    function alertjs(){
+        alert('hello World')
+    }
+
+    function variable(){
+        var a=1,b=3;
+        document.getElementsByClassName('p1')[1].innerHTML=a+b;
+    }
+
+    function toCelsius(fahrenheit){
+        return (5/9)*(fahrenheit-32)
+    }
+
+    function Objectexp(){
+        var person={
+            name:"gurtej lal",
+            age:"23",
+            language:"javascript"
+        }
+        document.getElementsByClassName('p1')[3].innerHTML=person.name+" "+person.age+" "+person.language;
+    }
+
+    function indexofexmp(){
+        var str="Please Gurtej Locate Where 'Gurtej Occurs'"
+        document.getElementsByClassName('p2')[0].innerHTML=str.indexOf('Gurtej');;
+    }
+
+    function indexlastofexmp(){
+        var str="Please Gurtej Locate Where 'Gurtej Occurs'"
+        document.getElementsByClassName('p2')[1].innerHTML=str.lastIndexOf('Gurtej');
+    }
+
+    function searchexp(){
+        var str="This is used to show the example of search()"
+        document.getElementsByClassName('p2')[2].innerHTML=str.search('show');
+    }
+
+    function sliceexp(){
+        var str="Orange , Apple , Grapes"
+        document.getElementsByClassName('p2')[3].innerHTML=str.slice(8,14)
+    }
+
+    function substrexp(){
+        var str="Orange , Apple , Grapes"
+        document.getElementsByClassName('p2')[4].innerHTML=str.substr(16,22);
+    }
+
+    function repexp(){
+        var str=document.getElementsByClassName('p2')[5].innerHTML
+        var rep=str.replace('Microsoft','MyGithub')
+        document.getElementsByClassName('p2')[5].innerHTML=rep
+    }
+
+    var cars=new Array(3);
+        cars[0]="volvo"
+        cars[1]="jaguar"
+        cars[2]="ferrari"
+    
+    function showdata(){    
+        var txt=cars[0]+" "+cars[1]+" "+cars[2]
+        document.getElementsByClassName('p3')[0].innerHTML=txt
+    }
+
+    function pushexp(){
+        cars.push('bmw')
+        var txt=cars[0]+" "+cars[1]+" "+cars[2]+" "+cars[3]
+        document.getElementsByClassName('p3')[1].innerHTML=txt
+    }
+
+    function iterate(){
+        var len=cars.length;
+        var txt="";
+        for(var i=0; i<len; i++){
+            txt+=cars[i]+" ";
+        }
+        document.getElementsByClassName('p3')[2].innerHTML=txt
+    }
+
+    function spliceexp(){
+        var fruits=['Banana','apple','mango']
+        fruits.splice(4,2,'Grapes','Kiwi')
+        document.getElementsByClassName('p3')[3].innerHTML=fruits
+    }
+
+    function concatexp(){
+        var names1=['gurtej','ankit','raj']
+        var names2=['karan','shubham']
+        document.getElementsByClassName('p3')[4].innerHTML=names1.concat(names2)
+    }
+
+    function popexp(){
+        var arr=['banana','grapes','mango','cherry']
+        document.getElementsByClassName('p3')[5].innerHTML=arr.pop()
+    }
+
+    function sortexp(){
+        var arr=['banana','grapes','mango','cherry']
+        document.getElementsByClassName('p3')[6].innerHTML=arr.sort()
+    }
+
+    function revexp(){
+        var arr=[1,12,3,4,5,6]
+        arr.sort()
+        document.getElementsByClassName('p3')[7].innerHTML=arr.reverse() + " this is important to note"
+        +"that this value are treating as string value";
+    }
+    function numericsortexp(){
+        var arr=[10,11,5,4,1,20,2]
+        arr.sort(function(a,b){return a-b})
+        document.getElementsByClassName('p3')[8].innerHTML=arr
+    }
+</script>

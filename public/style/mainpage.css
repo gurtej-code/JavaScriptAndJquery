@@ -1,0 +1,41 @@
+body,html{
+    height: 100%;
+    margin: auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p,h3{
+    text-align: center;
+}
+
+.first{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first div{
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+    padding: 8px;
+}
+
+input[type=button]{
+    background-color: dodgerblue;
+    padding: 5px;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+input[type=button]:hover{
+    background-color:crimson;
+    transition: 1s all;
+}
+
+@media screen and (max-width:1300px){
+    .first div{
+        width: 100%;
+    }   
+}
